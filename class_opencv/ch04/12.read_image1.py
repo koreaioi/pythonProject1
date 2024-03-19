@@ -7,7 +7,7 @@ def print_matInfo(name, image):
     elif image.dtype == 'int16':   mat_type = "CV_16S"
     elif image.dtype == 'float32': mat_type = "CV_32F"
     elif image.dtype == 'float64': mat_type = "CV_64F"
-    #image.ndim은 사진의 차원 수, 축의 수를 말해준다.
+    #0
     nchannel = 3 if image.ndim == 3 else 1
 
     ## depth, channel(3원색이냐 단색이냐) 출력
