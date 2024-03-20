@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-image = np.zeros((200,300), np.uint8) # 이미지의 크기는 200, 300
+image = np.zeros((200,400), np.uint8) # 이미지의 크기는 200, 300
 image.fill(255) # 흰색 지정
 
 title1, title2 = "AUTOSIZE", "NORMAL",
