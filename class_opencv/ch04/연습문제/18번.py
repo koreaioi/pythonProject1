@@ -15,7 +15,7 @@ bigsize =(r,r)
 smallsize = (r//2, r//2)
 print(r)
 
-cv2.ellipse(image, center,bigsize,0,180,360,red,-1)
+cv2.ellipse(image, center,bigsize,0,180,360,red,-1) # -1 -> 색 채우기
 cv2.ellipse(image, center,bigsize,0,0,180,blue,-1)
 cv2.ellipse(image, small_center1,smallsize,0,0,180,red,-1)
 cv2.ellipse(image, small_center2,smallsize,0,180,360,blue,-1)
