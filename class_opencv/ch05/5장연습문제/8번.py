@@ -11,12 +11,6 @@ cv2.ellipse(mask,center, (80,120),0, 0, 360, 255,-1)
 # mask = mask 
 dst = cv2.bitwise_and(image, image, mask = mask)
 
-
-
-
-
-
-
 # cv2.imshow("image", image)
 cv2.imshow("mask" ,mask)
 cv2.imshow("dst",dst)
