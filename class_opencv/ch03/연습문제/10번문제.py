@@ -15,3 +15,8 @@ sort = sorted(count.items(), key = lambda x:x[1] ,reverse=True )
 for i in range(3):
     num, cnt = sort[i]
     print(f"숫자: {num} 중복 횟수: {cnt}")
+
+
+
+
+    
