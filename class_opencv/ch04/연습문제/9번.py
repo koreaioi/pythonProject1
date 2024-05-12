@@ -1,15 +1,25 @@
-import numpy as np, cv2
+import numpy as np,cv2
 
-image1 = np.zeros((600,400,3), np.uint8)+255
+image = np.ones((600,400,3), np.uint8) * 255
 
-title1 = "title1"
-pt1, pt2 =(100,100) , (300,400)
-red = (0,0,255)
-
-cv2.rectangle(image1, pt1, pt2, red,cv2.FILLED)
-
-cv2.imshow(title1,image1)
+cv2.rectangle(image, (100,100,200,300),(0,0,255),-1)
+cv2.imshow("title", image)
 cv2.waitKey(0)
+
+
+
+# import numpy as np, cv2
+#
+# image1 = np.zeros((600,400,3), np.uint8)+255
+#
+# title1 = "title1"
+# pt1, pt2 =(100,100) , (300,400)
+# red = (0,0,255)
+#
+# cv2.rectangle(image1, pt1, pt2, red,cv2.FILLED)
+#
+# cv2.imshow(title1,image1)
+# cv2.waitKey(0)
 
 
 

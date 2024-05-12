@@ -10,6 +10,7 @@ cv2.rectangle(image, (x,y,w,h), (255,0,0),2) # 파란 영역
 tmp = image[y:y+h, x:x+w]
 img50 = np.full(tmp.shape, (50,50,50), np.uint8)
 cv2.add(tmp, img50,tmp)
+# tmp = tmp + 50
 # cv2.add(tmp, img50,image[y:y+h, x:x+w])
 
 # 화소대비 증가

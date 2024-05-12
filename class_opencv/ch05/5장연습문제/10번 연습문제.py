@@ -17,8 +17,7 @@ while True:
     # tmp = frame[y:y+100, x:x+200]
 
     # 함수이용
-    average1 = tuple(map(int, cv2.mean(tmp)))
-
+    # average1 = tuple(map(int, cv2.mean(tmp)))
     # 행렬 순회
     value = np.array([0,0,0],np.uint8)
     for row in tmp:
@@ -26,7 +25,7 @@ while True:
             value += pixel
     average2 = (value / (w*h)).astype(int)
 
-    put_string(frame, "average1 : " , (10,30), average1[:-1])
+    # put_string(frame, "average1 : " , (10,30), average1[:-1])
     put_string(frame, "average2 : " , (50,70), average2)
 
     if cv2.waitKey(30) >= 0 : break

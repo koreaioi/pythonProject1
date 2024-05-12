@@ -9,8 +9,10 @@ m = np.array([
              [np.sin(theta), np.cos(theta), 0],
              [      0,      0,      1        ] ], np.float32)
 
-delta = (pts1[2] - pts1[0]) // 2
-center = pts1[0] + delta
+# delta = (pts1[2] - pts1[0]) // 2
+# center = pts1[0] + delta
+
+center = (pts1[2] + pts1[0])//2
 
 t1 = np.eye(3, dtype = np.float32)
 t2 = np.eye(3, dtype = np.float32)

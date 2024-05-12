@@ -1,7 +1,13 @@
 import numpy as np, cv2
 
-data = [3,6,3, -5,6,1 ,2, -3, 5]
-m1 = np.array(data, np.float32).reshape(3,3)
+# data = [3,6,3, -5,6,1 ,2, -3, 5]
+# m1 = np.array(data, np.float32).reshape(3,3)
+m1 = np.array([
+    (3,6,3),
+    (-5,6,1),
+    (2,-3,5)
+], np.float32)
+
 m2 = np.array([2,10,28], np.float32)
 
 ret, inv = cv2.invert(m1, cv2.DECOMP_LU) # 역행렬 계산
