@@ -1,5 +1,4 @@
 # 미디언 필터링을 수행하는 함수를 직접 작성하고, 수행 결과를 윈도우에 표시하시오.
-
 import numpy as np, cv2
 
 def average_filter(image, ksize):
