@@ -18,8 +18,8 @@ img = np.full((c4, c4, 3),255, np.uint8)
 blue, red = (255, 0, 0), (0, 0, 255)
 
 cv2.ellipse(img, (c2, c2), (r, r), 0, 0, 180, blue, -1)
-cv2.ellipse(img, (c2, c2), (r, r), 180, 0, 180, red, -1)
-cv2.ellipse(img, (c2 + sr, c2), (sr, sr), 180, 0, 180, blue, -1)
+cv2.ellipse(img, (c2, c2), (r, r), 0, 180, 360, red, -1)
+cv2.ellipse(img, (c2 + sr, c2), (sr, sr), 0, 180, 360, blue, -1)
 cv2.ellipse(img, (c2 - sr, c2), (sr, sr), 0, 0, 180, red, -1)
 
 left = (c2 - c * (18+8)/24, c2 - sr)
